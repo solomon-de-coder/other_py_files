@@ -1,0 +1,88 @@
+
+Introduction to math
+The math library in Python provides tools for mathematical operations like powers, logarithms, trigonometry, and more. Start by importing it:
+import math
+
+1. Constants
+- math.pi: The value of π (3.14159…)
+- math.e: Euler’s number (2.71828…)
+- math.tau: The value of τ (2π or 6.28318…)
+
+Example:
+print(math.pi)  # Output: 3.141592653589793
+print(math.e)   # Output: 2.718281828459045
+print(math.tau) # Output: 6.283185307179586
+
+2. Basic Functions
+- Square Root: math.sqrt(x) calculates the square root.
+- Power: math.pow(x, y) calculates x^y.
+- Absolute Value: math.fabs(x) returns the absolute value.
+
+Example:
+print(math.sqrt(16))        # Output: 4.0
+print(math.pow(2, 3))       # Output: 8.0
+print(math.fabs(-5))        # Output: 5.0
+
+3. Trigonometric Functions
+Functions for trigonometry (all angles in radians):
+- math.sin(x), math.cos(x), math.tan(x): Sine, cosine, and tangent.
+- math.radians(x): Converts degrees to radians.
+- math.degrees(x): Converts radians to degrees.
+
+Example:
+angle = math.pi / 4  # 45 degrees in radians
+print(math.sin(angle))  # Output: 0.7071067811865476
+print(math.radians(180))  # Output: 3.141592653589793
+print(math.degrees(math.pi))  # Output: 180.0
+
+4. Logarithmic and Exponential Functions
+- math.log(x): Natural logarithm (ln(x)).
+- math.log(x, base): Logarithm with a specific base.
+- math.exp(x): Exponential (e^x).
+
+Example:
+print(math.log(10))          # Output: 2.302585092994046 (ln(10))
+print(math.log(100, 10))     # Output: 2.0 (log base 10 of 100)
+print(math.exp(2))           # Output: 7.389056098930649 (e^2)
+
+5. Rounding and Approximation
+- math.floor(x): Rounds down to the nearest integer.
+- math.ceil(x): Rounds up to the nearest integer.
+- math.trunc(x): Removes the decimal part.
+
+Example:
+print(math.floor(3.7))       # Output: 3
+print(math.ceil(3.7))        # Output: 4
+print(math.trunc(3.7))       # Output: 3
+
+6. Special Functions
+- Factorial: math.factorial(x) calculates x!.
+- Greatest Common Divisor: math.gcd(a, b) finds the largest number dividing both a and b.
+- Integer Square Root: math.isqrt(x) calculates the square root as an integer.
+
+Example:
+print(math.factorial(5))     # Output: 120 (5 * 4 * 3 * 2 * 1)
+print(math.gcd(48, 18))      # Output: 6
+print(math.isqrt(16))        # Output: 4
+
+7. Infinity and NaN
+- math.inf: Represents positive infinity.
+- math.nan: Represents "Not a Number".
+
+Example:
+print(math.isinf(math.inf))  # Output: True
+print(math.isnan(math.nan))  # Output: True
+
+Practice Problems
+1. Find the circumference of a circle with radius 7: C = 2 * π * r
+   radius = 7
+   print(2 * math.pi * radius)  # Output: 43.982297150257104
+
+2. Convert 90 degrees to radians.
+   print(math.radians(90))  # Output: 1.5707963267948966
+
+3. Find the factorial of 10.
+   print(math.factorial(10))  # Output: 3628800
+
+4. Calculate the natural logarithm of 50.
+   print(math.log(50))  # Output: 3.912023005428146
