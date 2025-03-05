@@ -1,24 +1,12 @@
-# Get input from the user
-a = input("Enter items in the format [item1, item2, ...]: ")
-
-# Clean and split the input
-items = a.strip('[]').split(',')
-
-# Initialize lists
-even = []
+#Program to check odd or even and put them in seperate list 
 odd = []
-strings = []
-
-# Process each item
-for i in items:
-    i = i.strip()  # Remove any extra spaces
-    if i.isdigit():  # Check if the item is a number
-        n = int(i) 
-        (even if n % 2 == 0 else odd).append(n)
+eve = []
+a = eval(input("Enter the numbers seperated with commas"))
+a = list(a)
+for i in a:
+    if i%2 == 0:
+        eve.append(i)
     else:
-        strings.append(i)
-
-# Output results
-print("Even Numbers:", even)
-print("Odd Numbers:", odd)
-print("Strings:", strings)
+        odd.append(i)
+print("even numbers:", eve) 
+print("odd numbers:", odd)
